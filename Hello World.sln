@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "hello-world", "hello-world"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hello World", "hello-world\Hello World\Hello World.csproj", "{D5909B62-F320-4095-966C-E7550BD27C72}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "address-book", "address-book", "{21242E0C-1A8B-4C60-8D74-16C8EEE537F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Address Book", "address-book\Address Book\Address Book.csproj", "{3275520F-1EAA-4E25-AB8F-1506D13BACF0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +24,13 @@ Global
 		{D5909B62-F320-4095-966C-E7550BD27C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5909B62-F320-4095-966C-E7550BD27C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5909B62-F320-4095-966C-E7550BD27C72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3275520F-1EAA-4E25-AB8F-1506D13BACF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3275520F-1EAA-4E25-AB8F-1506D13BACF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3275520F-1EAA-4E25-AB8F-1506D13BACF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3275520F-1EAA-4E25-AB8F-1506D13BACF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D5909B62-F320-4095-966C-E7550BD27C72} = {CAFEE01B-112C-4D18-891B-65C9CB936EA2}
+		{3275520F-1EAA-4E25-AB8F-1506D13BACF0} = {21242E0C-1A8B-4C60-8D74-16C8EEE537F4}
 	EndGlobalSection
 EndGlobal
