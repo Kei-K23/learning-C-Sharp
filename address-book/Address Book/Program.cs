@@ -25,13 +25,13 @@
                         ViewContacts();
                         break;
                     case "2":
-                        addNewContact();
+                        AddNewContact();
                         break;
                     case "3":
-                        editContact();
+                        EditContact();
                         break;
                     case "4":
-                        deleteContact();
+                        DeleteContact();
                         break;
                     case "5":
                         Console.WriteLine("Good bye!");
@@ -54,7 +54,7 @@
             {
                 for (int i = 0; i < contacts.Count; i++)
                 {
-                    Console.WriteLine($"{0}. {1} ({2})", i + 1, contacts[i].Name, contacts[i].Email);
+                    Console.WriteLine("{0}. {1} ({2})", i + 1, contacts[i].Name, contacts[i].Email);
                 }
             }
 
@@ -63,19 +63,61 @@
             Console.ReadKey();
         }
 
-        static void addNewContact()
+        static void AddNewContact()
         {
+            Console.Clear();
+            Console.WriteLine("Add new contact:");
 
+            Console.Write("Name: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Email: ");
+            string email = Console.ReadLine();
+
+            contacts.Add(new Contact(name, email));
+
+            Console.WriteLine("Contact added successfully");
+            Console.WriteLine();
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
         }
 
-        static void editContact()
+        static void EditContact()
         {
+            Console.Clear();
+            Console.WriteLine("Edit contact:");
 
+            Console.Write("Enter contact number to edit: ");
+            int contactNumber = int.Parse(Console.ReadLine()) - 1;
+
+            Console.Write("Name: ");
+            string name = Console.ReadLine();
+
+            Console.Write("Email: ");
+            string email = Console.ReadLine();
+
+            contacts[contactNumber] = new Contact(name, email);
+
+            Console.WriteLine("Contact edited successfully");
+            Console.WriteLine();
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
         }
 
-        static void deleteContact()
+        static void DeleteContact()
         {
+            Console.Clear();
+            Console.WriteLine("Delete contact:");
 
+            Console.Write("Enter contact number to delete: ");
+            int contactNumber = int.Parse(Console.ReadLine()) - 1;
+
+            contacts.RemoveAt(contactNumber);
+
+            Console.WriteLine("Contact deleted successfully");
+            Console.WriteLine();
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
         }
     }
 
