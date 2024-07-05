@@ -15,6 +15,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "expense-tracker", "expense-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expense Tracker", "expense-tracker\Expense Tracker\Expense Tracker.csproj", "{9D98F0B7-715B-46D4-AEF7-9CA975226D1B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tic-tac-toe", "tic-tac-toe", "{A7E3381A-D564-4140-8D28-54E498384F47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tic Tac Toe", "tic-tac-toe\Tic Tac Toe\Tic Tac Toe.csproj", "{2AAA2C77-6728-41AF-A427-68C4326C5FAA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,10 +40,15 @@ Global
 		{9D98F0B7-715B-46D4-AEF7-9CA975226D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D98F0B7-715B-46D4-AEF7-9CA975226D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D98F0B7-715B-46D4-AEF7-9CA975226D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AAA2C77-6728-41AF-A427-68C4326C5FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AAA2C77-6728-41AF-A427-68C4326C5FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AAA2C77-6728-41AF-A427-68C4326C5FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AAA2C77-6728-41AF-A427-68C4326C5FAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D5909B62-F320-4095-966C-E7550BD27C72} = {CAFEE01B-112C-4D18-891B-65C9CB936EA2}
 		{3275520F-1EAA-4E25-AB8F-1506D13BACF0} = {21242E0C-1A8B-4C60-8D74-16C8EEE537F4}
 		{9D98F0B7-715B-46D4-AEF7-9CA975226D1B} = {2CF912E7-0D3E-4C92-9458-49D4BA74FD33}
+		{2AAA2C77-6728-41AF-A427-68C4326C5FAA} = {A7E3381A-D564-4140-8D28-54E498384F47}
 	EndGlobalSection
 EndGlobal

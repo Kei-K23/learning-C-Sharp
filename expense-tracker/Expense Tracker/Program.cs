@@ -33,16 +33,16 @@
                 switch (choice)
                 {
                     case 1:
-                        addExpense();
+                        AddExpense();
                         break;
                     case 2:
-                        categorizeExpense();
+                        CategorizeExpense();
                         break;
                     case 3:
-                        monthlyBudget();
+                        MonthlyBudget();
                         break;
                     case 4:
-                        viewReport();
+                        ViewReport();
                         break;
                     case 5:
                         Console.WriteLine("Bye bye!");
@@ -58,7 +58,7 @@
             }
         }
 
-        static void addExpense()
+        static void AddExpense()
         {
             Console.Clear();
             Console.WriteLine("=== Add new Expense ===");
@@ -85,14 +85,14 @@
             Console.WriteLine("New expense created successfully");
         }
 
-        static void categorizeExpense()
+        static void CategorizeExpense()
         {
             Console.Clear();
             Console.WriteLine("=== Categorize Expense ===");
 
-            checkExpenseListEmpty();
+            CheckExpenseListEmpty();
 
-            showExpenseList();
+            ShowExpenseList();
 
             Console.WriteLine();
             Console.Write("Enter the expense number to categorize: ");
@@ -114,14 +114,14 @@
             Console.WriteLine("Expense categorized successfully");
         }
 
-        static void monthlyBudget()
+        static void MonthlyBudget()
         {
             Console.Clear();
             Console.WriteLine("=== Monthly budget ===");
 
-            checkExpenseListEmpty();
+            CheckExpenseListEmpty();
 
-            showExpenseList();
+            ShowExpenseList();
             Console.WriteLine();
 
             Console.Write("Enter the month: ");
@@ -144,14 +144,14 @@
             Console.WriteLine($"Your total balance: {totalExpense}");
         }
 
-        static void viewReport()
+        static void ViewReport()
         {
             Console.Clear();
             Console.WriteLine("=== View Report ===");
 
-            checkExpenseListEmpty();
+            CheckExpenseListEmpty();
 
-            showExpenseList();
+            ShowExpenseList();
 
             Console.WriteLine();
             Console.Write("Enter the category for reporting: ");
@@ -173,7 +173,7 @@
 
         }
 
-        static void checkExpenseListEmpty()
+        static void CheckExpenseListEmpty()
         {
             if (expenses.Count < 0)
             {
@@ -182,7 +182,7 @@
             }
         }
 
-        static void showExpenseList()
+        static void ShowExpenseList()
         {
             Console.WriteLine("Expense lists: ");
             for (int i = 0; i < expenses.Count; i++)
